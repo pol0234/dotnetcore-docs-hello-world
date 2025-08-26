@@ -1,48 +1,28 @@
 ﻿@page
 @model IndexModel
-@{    
-    ViewData["Title"] = "Home page";
+@{
+    ViewData["Title"] = "Domov - Šimon Polák";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Hello Beautiful World from .NETspend 8</h1>
-    <p class="lead">Welcome to your first ASP.NET Core app 🎉</p>
-    <p>
-        Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.
-    </p>
+    <h1 class="display-3 fw-bold mb-3">👋 Vitaj na stránke Šimona Poláka</h1>
+    <p class="lead mb-5">Moje osobné miesto na webe – tu nájdeš moje sociálne siete a odkazy.</p>
 
-    <hr />
-
-    <div class="mb-4">
-        <strong>Host operating system:</strong> @Model.OSVersion
+    <div class="d-flex justify-content-center gap-3">
+        <a href="https://instagram.com/simonn.plk" target="_blank" class="btn btn-lg btn-danger shadow-sm">
+            📸 Instagram
+        </a>
+        <a href="https://youtube.com/" target="_blank" class="btn btn-lg btn-dark shadow-sm">
+            ▶️ YouTube
+        </a>
+        <a href="https://github.com/" target="_blank" class="btn btn-lg btn-secondary shadow-sm">
+            💻 GitHub
+        </a>
     </div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card shadow-sm p-3 mb-4">
-                <h4>🚀 Quick Start</h4>
-                <p>Explore your project structure and start coding right away.</p>
-                <a class="btn btn-primary" href="/docs">Go to Docs</a>
-            </div>
-        </div>
+    <hr class="my-5" />
 
-        <div class="col-md-4">
-            <div class="card shadow-sm p-3 mb-4">
-                <h4>📢 News</h4>
-                <ul class="list-unstyled">
-                    <li>✔ .NET 8 is here</li>
-                    <li>✔ Hot reload supported</li>
-                    <li>✔ Cross-platform builds</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card shadow-sm p-3 mb-4">
-                <h4>📞 Support</h4>
-                <p>Need help? Check our community and support channels.</p>
-                <a class="btn btn-outline-secondary" href="https://github.com/dotnet">GitHub</a>
-            </div>
-        </div>
-    </div>
+    <footer class="text-muted">
+        <small>&copy; @DateTime.Now.Year Šimon Polák</small>
+    </footer>
 </div>
